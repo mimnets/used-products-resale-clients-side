@@ -7,7 +7,7 @@ const ShowCategoryItems = () => {
     console.log(phoneListings)
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/phone-listings/${category_id}}`)
+        fetch(`https://used-products-resale-server-mimnets.vercel.app/phone-listings/${category_id}}`)
         .then(res => res.json())
         .then(data => setPhoneListings(data));
     },[category_id])

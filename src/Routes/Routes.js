@@ -15,7 +15,7 @@ export const router = createBrowserRouter([
             {
                 path:'/phone-listings/:id',
                 element: <ShowCategoryItems></ShowCategoryItems>,
-                loader: ({params}) => fetch(`http://localhost:5000/categories/${params.id}`)
+                loader: ({params}) => fetch(`https://used-products-resale-server-mimnets.vercel.app/categories/${params.id}`)
             }
         ]
     }    
